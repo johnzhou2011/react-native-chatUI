@@ -78,9 +78,18 @@ export default class RichTextWrapper extends Component {
 
   render(){
     return (
-      <View style={styles.container}>
-        {this.state.Views}
-      </View>
+      
+      <Text >
+        <Image key={'deyi'} style={styles.subEmojiStyle} resizeMethod={'auto'} source={EMOTIONS_DATA['/{deyi']}/>
+        <Text key ={'emptyTextView'+(Math.random()*100)} style={styles.titleText}>啦啦啦</Text>
+        <Image key={'deyi'} style={styles.subEmojiStyle} resizeMethod={'auto'} source={EMOTIONS_DATA['/{deyi']}/>
+        <Image key={'deyi'} style={styles.subEmojiStyle} resizeMethod={'auto'} source={EMOTIONS_DATA['/{deyi']}/>
+        <Image key={'deyi'} style={styles.subEmojiStyle} resizeMethod={'auto'} source={EMOTIONS_DATA['/{deyi']}/>
+        <Image key={'deyi'} style={styles.subEmojiStyle} resizeMethod={'auto'} source={EMOTIONS_DATA['/{deyi']}/>
+        <Image key={'deyi'} style={styles.subEmojiStyle} resizeMethod={'auto'} source={EMOTIONS_DATA['/{deyi']}/>
+        <Text key ={'emptyTextView'+(Math.random()*100)} style={styles.titleText}>啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</Text>
+      </Text>
+    
     );
   }
 
@@ -91,7 +100,9 @@ RichTextWrapper.propTypes = {
 };
 
 const styles = StyleSheet.create({
-
+  titleText: {
+    fontSize: 20
+  },
   container: {
     flexDirection:'row',
     alignItems:'center',
@@ -99,8 +110,8 @@ const styles = StyleSheet.create({
   },
 
   subEmojiStyle:{
-    width:25,
-    height:25,
+    width:2*20,
+    height:2*20,
   }
 
 });
